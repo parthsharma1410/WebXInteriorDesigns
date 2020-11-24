@@ -1,0 +1,298 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+		
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>WD08B5</title>
+	<link rel="stylesheet" href="css/index.css" type="text/css"> 
+	<script type="text/javascript" src="js/intex.js"></script>
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu" rel="stylesheet">
+
+	<!-- CSS Stylesheets -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/styles.css">
+
+	<!-- Font Awesome -->
+	<script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+	<!-- Bootstrap Scripts -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<!--using FontAwesome---------------->
+	<script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<section class="navigation">
+	<header>
+	<!--bars-icon-->
+	<div class="toggle"></div>
+	<!--menu-->
+	<nav class="menu">
+	<!--logo--------------------------->
+	<div class="logo">WebX Interior Designs</div>
+		<ul >
+			<li><a href="index.html">Home</a></li>	
+			<li class="sub-menu"><a href="#">Designs</a>
+			<!--sub-menu-->
+				<ul >
+					<li><a href="residential.html">Residential</a></li>
+					<li><a href="commercial.html">Commercial</a></li>
+					<li><a href="business.html">Business</a></li>
+				</ul>
+				
+				
+			</li>	
+			<li><a href="ourproducts.html">Designers</a></li>	
+			<li class="sub-menu"><a href="services.html">Services</a>
+				<!--sub-menu-->
+				<!-- <ul >
+					<li><a href="#">Furniture</a></li>
+					<li><a href="#">Chandeliers</a></li>
+					<li><a href="#">Home Decors</a></li>
+				</ul>	 -->
+				
+			</li>		
+			<li><a href="about.html">About</a></li>	
+			<li><a href="contact.html">Contact</a>	</li>	
+		</ul>
+	</div>
+	
+	</nav>
+	<!--search-icon---------------------->
+	<div class="search-icon"></div>
+	</header>
+	
+	
+
+	</section>
+	
+	<!--search-box------------------------------------------->
+	<div class="search-box">
+	<!--input--------->
+	<input type="text" placeholder=" Search Something Here">
+	<!--icon------>
+	<div class="s-icon"><i class="fas fa-search"></i></div>
+	</div>
+	
+	
+	<!--script------------------------->
+	<script type="text/javascript" src="js/Jquery.js"></script>
+	<script type="text/javascript">
+	
+		
+ $(document).ready(function(){
+	$('.search-icon').click(function(){
+	$('.search-icon').toggleClass('active')//search icon change onClick
+	$('.search-box').toggleClass('active')//box show when click on icon
+	$('header').toggleClass('active-search')//In mobile logo and bars                                             hide when search box show
+		 
+	 })
+ });
+		/*sub-menu visible on click  */
+		
+			$(document).ready(function(){
+	 $('ul li').click(function(){
+		 	$(this).siblings().removeClass('active')//remove active 									class when click again
+		 
+		 $(this).toggleClass('active')//Add Active class first click
+		
+		
+		 
+	 })
+ });
+		
+		
+		
+	
+		
+	$(document).ready(function(){
+	 $('.toggle').click(function(){
+		 $('.toggle').toggleClass('active')//change menu icon onClick
+		 
+		 $('header').toggleClass('active-menu')//hide logo and search 							icon when click on menu icon in mobile
+		
+		 
+	 })
+ });
+	
+	
+
+</script>
+<!-- ============================================================================================================= -->
+<div class="hero-img">
+	<div class="hero-text">
+		<!-- <h1>Interior <strong>Home</strong> <span>Designers</span></h1> -->
+	</div>
+</div>
+<div class="box-1" id="top">
+			<div class="content-1">
+			<center><h1>What We Do</h1><center>
+			<p>WITH OVER 15 YEARS OF DESIGN AND FURNITURE EXPERIENCE</p>
+			<br>
+			<p>
+				<b>“</b>WEBSITE NAME<b>”</b> Interior Design has designed and managed projects for the entertainment industry, medical facilities,
+				and military bases nationwide. From initial concept to final detail, the key to our success is our commitment to customer 
+				satisfaction combined with unique capabilities and furniture resources. <b>“</b>WEBSITE NAME<b>”</b> Interior Design is known for 
+				completing projects far more cost and time-efficiently than our competitors, while making interiors that are unique and 
+				memorable. It is that creative out-of-the-box approach that <b>“</b>WEBSITE NAME<b>”</b> Interior Design brings to each project that 
+				sets us apart. We look forward to putting this same great creativity to work for you.
+			</p>
+			</div>
+			<div class="box-img1">
+				<img src="img/Hero-image.jpg" width="100%" height="auto">
+			</div>    
+		</div>
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+	<ul class="carousel-indicators">
+		<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+		<li data-target="#myCarousel" data-slide-to="1"></li>
+		<li data-target="#myCarousel" data-slide-to="2"></li>
+	</ul>
+  
+  <!-- The slideshow -->
+	<div class="carousel-inner">
+		<div class="carousel-item active">
+		<img src="img/i1.jpg" alt="New York" width="1100" height="30%">
+		</div>
+		<div class="carousel-item">
+		<img src="img/size4.jpg" alt="Chicago" width="1100" height="30%">
+		</div>
+		<div class="carousel-item">
+			<img src="img/Hero-image2.jpg" alt="Los Angeles" width="1100" height="300">
+		</div>
+	</div>
+	
+  <!-- Left and right controls -->
+	<a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+		<span class="carousel-control-prev-icon"></span>
+	</a>
+	<a class="carousel-control-next" href="#myCarousel" data-slide="next">
+		<span class="carousel-control-next-icon"></span>
+	</a>
+	</div>
+
+</div>
+
+
+
+<center>
+	<div class="quotes">
+		<div class="quo-img">
+			<img src="img/quote.png" alt="quotes">
+		</div>
+		<p>
+			“May your walls Know joy;
+			May every room hold laughter and Every window open to great possibility.” 
+		</p>
+	</div>
+</center>
+<div class="discription">
+	<div class="box">
+		
+		<div class="box-2">
+			<div class="content-2">
+			<center><h1> What We Offer </h1></center>
+			<p>
+				<br>
+				Whether the project is a 'new execution' or refurbishment of existing interiors, we offer end-to-end services.
+				<br>
+				•	Any structural changes (i.e. Construction/Civil related work)
+				<br>
+				•	Flooring.
+				<br>
+				•	Bathroom décor, design, or fittings.
+				<br>
+				•	Custom window treatments.
+				<br>
+				•	Painting Service (Suggestions offered/No execution)
+			</p>
+			
+			</div>
+			<img src="img/rename.png" width="100%" height="180px">
+		</div>
+	</div>
+</div>
+
+<div class="row">
+
+	<div class="pricing-column col-lg-4 col-md-6">
+	  <div class="card">
+		<div class="card-header">
+		  <center>
+			<h3>Residential</h3>
+			<img src="img/k4.jpg" width=200px; height=200px;>
+		  </center>
+		</div>
+		<div class="card-body">
+		  <h2 class="price-text">Home Decor</h2>
+		  <p>Residential interior design is the art of creating aesthetic and functional living spaces. ... </p>
+		  <p>Designers work with architects to ensure that physical features allow for the appropriate division of private versus public space and can also aesthetically divide or unify rooms through colors, textures, and patterns.</p>
+
+
+		</div>
+	  </div>
+	</div>
+	
+	<div class="pricing-column col-lg-4 col-md-6">
+	  <div class="card">
+		<div class="card-header">
+		  <center>
+			<h3>Commercial</h3>
+			<img src="img/size2.jpg" width="200px" height="200px">
+		  </center>
+		</div>
+		<div class="card-body">
+		  <h2 class="price-text">Purpose</h2>
+		  <p> Many reasons exist for a business or public agency to pay for commercial interior design. In the case of retail shops, a well-designed space may be more attractive to customers, getting more people to enter the store and persuading them to spend more time there.</p>
+		  <p> In other cases, a commercial interior design project may have goals such as establishing a theme that projects a particular corporate image.For example, a tech company may furnish its lobby with a contemporary theme to convey its focus on efficiency and the future.</p>
+		  <p></p>
+
+		</div>
+	  </div>
+	</div>
+
+	<div class="pricing-column col-lg-4">
+	  <div class="card">
+		<div class="card-header">
+		  <center>
+			<h3>Buisness</h3>
+			<img src="img/char.jpg" height="200px" width="200px"> 
+		  </center>
+		</div>
+		<div class="card-body">
+		  <h2 class="price-text">Marketing</h2>
+		  <p>Blog posts with tips, best practices, and creative ideas. Stories about you and your team. </p>
+		  <p>Social media posts that drive visitors to your website.</p>
+		  <p> Projects that you post on sites like Houzz or Apartment Therapy.</p>      
+		</div>
+	  </div>
+	</div>
+  </div>
+	<div class="top_page">
+		<a href="#top"> Go to Top</a>
+	</div>
+<footer class="footer">
+	<a href="#">Copyright&copy;2020</a>
+	|
+	<a href="#">(Verzio)Major_Project(Ravi Kant)</a>
+	|
+	<a href="">Internship_program</a>
+	|
+	<a href="">(WD-Minor-AUG)</a>
+	|
+	<a href=""></a>
+</footer>
+
+
+</body>
+</html>
