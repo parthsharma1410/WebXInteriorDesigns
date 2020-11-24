@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css/contact.css">
+<style>
+
+</style>
+</head>
+<body>
+
+<h1> CONTACT US</h1>
+<p> To get in touch please Ping us on the contact section.<br>There's nothing we like more than rolling up our sleeves and starting a brand <br> new project.Let's make something great together.</p>
+
+<div class="container">
+   <div id="error_msg"></div>
+  <form  onsubmit="validateFormOnSubmit(this)" >
+
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name.." >
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name.." >
+
+    <label for="email">Email</label>
+    <input type="text" id="email" name="email" placeholder="Your email.." pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" />
+    
+
+    <label for="message">Message</label>
+    <textarea id="message" name="message" placeholder="Write something.." style="height:200px" required ></textarea>
+    
+    <div class="btn">
+    <input type="submit" value="Send" >
+    <input type="button" onclick="location.href='mailto:test@gmail.com';" value="Drop a Mail" >
+
+    </div>
+
+
+
+  </form>
+</div>
+
+<div class="mapouter">
+  <div class="gmap_canvas">
+    <iframe width="100%" height="490" id="gmap_canvas" src="https://maps.google.com/maps?q=%20India&t=&z=7&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+    </iframe>
+    <a href="https://putlocker-is.org">putlocker.dancer</a>
+  </div>
+  <style>.mapouter{position:relative;text-align:right;height:490px;width:100%;}.gmap_canvas {overflow:hidden;background:none!important;height:490px;width:100%;}</style>
+<div class="text-block">
+  <p>Address<br>Street:Shastri Nagar<br>
+     City:Munger<br>
+     State Full:Bihar<br>
+     Zip Code:811106<br>
+     Phone Number:08844755633
+</p>
+</div>
+
+</div>
+<footer>
+  <nav style="width:50%;display:flex;justify-content: space-evenly;flex-direction:row;align-items: center;margin:auto;margin-top:20px;">
+    <a href="index.html">Home</a>
+    <a href="residential.html">Designs</a>
+    <!-- <a href="#">Designers</a> -->
+    <a href="#">Services</a>
+    <a href="contact.html">Contact</a>
+
+  </nav>
+<h4 style="text-align: center;color:black;">All Copyrights reserved</h4>
+</footer>
+
+<script>
+function validateFormOnSubmit(form) {
+ 
+ error= document.getElementById("error");
+ succes=document.getElementById("success");
+  if (form.fname.value==" " || form.lname.value==" " || form.email.value==" "  || form.message.value==" ") {
+      alert("Empty Values Check Back !");
+  } else {
+      alert("Submitted ! Our customer services will contact u soon!!\nThank you !");
+  }
+}
+</script>
+
+<div class="top_page">
+  <a href="#top"> Go to Top</a>
+</div>
+<footer class="footer">
+	<a href="#">Copyright&copy;2020</a>
+	|
+	<a href="#">(Verzio)Major_Project(Ravi Kant)</a>
+	|
+	<a href="">Internship_program</a>
+	|
+	<a href="">(WD-Minor-AUG)</a>
+	|
+	<a href=""></a>
+</footer>
+</body>
+</html>

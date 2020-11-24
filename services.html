@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="stylesheet" href="css/services.css" type="text/css" > 
+    <link rel="stylesheet" type="text/css" href="css/service_nav.css">
+    <!-- <link rel="stylesheet" href="css/services.css"/> -->
+    <!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu" rel="stylesheet">
+
+	<script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+    <style>
+        .links{
+            background-color: rgb(40, 40, 92);
+            height:700px;
+        }
+        .div1{
+            display:inline-block;
+            padding:3px;
+            width:100%;
+            line-height:25px;
+        }
+        .immg{
+            height:300px;
+            width:50vw;
+            float: left;
+            margin-right: 10px;
+        }
+        .iggm{
+            height:300px;
+            width:50vw;
+            float:right;
+            margin-left:10px;
+        }
+        @media screen and (max-width:600px){
+            .immg{
+            height:200px;
+            width:100%;
+        }
+        .iggm{
+            height:200px;
+            width:100%;
+        }
+        }
+        p{
+            display:inline-block;
+            position:relative ;
+            color:black;
+            padding:10px;
+        }
+        .harmonious{
+            float:right;
+            width:50%;
+            height:300x;
+        }
+        .toneto{
+            float:left;
+            width:50%;
+            height:300x;
+        }
+        h1{
+            color: white;
+            font-size:35px;
+        }
+        .img1,.img2,.img3,.img4{
+                width:25%;
+                height:200px;
+            }
+        @media screen and (max-width:600px){
+            h2{
+                font-size:20px;
+               margin-top:15px;
+            }
+            .img1,.img2,.img3,.img4{
+                width:23%;
+                height:120px;
+            }
+            .img01,.img02,.img03,.img04{
+            width:22%;
+            height:30%;
+            }
+            .item{
+            background-color:white;
+            align-items: center;
+            width:22%;
+            height:100%;
+            }
+            .flex{
+            display: flex;
+            flex-direction:row;
+            width:100%;
+            height:100px;
+            justify-content:space-evenly;
+            }
+            .para1{
+            font-size:10px;
+            }
+            h1{
+            color: white;
+            font-size:20px;
+        }
+        }
+        .flex{
+            display: flex;
+            flex-direction:row;
+            width:100%;
+            height:370px;
+            justify-content:space-evenly;
+        }
+        .img01,.img02,.img03,.img04{
+            width:100%;
+            height:200px;
+            margin:auto;
+        }
+        .item{
+            background-color:transparent;
+            align-items: center;
+        }
+        .vendors{
+            display: flex;
+            flex-direction:row;
+            width:100%;
+            height:150px;
+            justify-content:space-evenly;
+        }
+        .img1,.img2,.img3,.img4{
+                width:23%;
+                height:120px;
+        }
+
+    </style>
+</head>
+<body>
+    <section class="navigation">
+        <header>
+        <!--bars-icon-->
+        <div class="toggle"></div>
+        <!--menu-->
+        <nav class="menu">
+        <!--logo--------------------------->
+
+        <div class="logo">WebX Interior Designs</div>
+		<ul >
+			<li><a href="index.html">Home</a></li>	
+			<li class="sub-menu"><a href="#">Designs</a>
+			<!--sub-menu-->
+				<ul >
+					<li><a href="residential.html">Residential</a></li>
+					<li><a href="commercial.html">Commercial</a></li>
+					<li><a href="business.html">Business</a></li>
+				</ul>
+				
+				
+			</li>	
+			<li><a href="ourproducts.html">Designers</a></li>	
+			<li class="sub-menu"><a href="services.html">Services</a>
+				<!--sub-menu-->
+				<!-- <ul >
+					<li><a href="#">Furniture</a></li>
+					<li><a href="#">Chandeliers</a></li>
+					<li><a href="#">Home Decors</a></li>
+				</ul>	 -->
+				
+			</li>		
+			<li><a href="about.html">About</a></li>	
+			<li><a href="contact.html">Contact</a>	</li>	
+		</ul>
+	</div>
+        
+        </nav>
+        <!--search-icon---------------------->
+        <div class="search-icon"></div>
+        </header>
+        
+        
+    
+        </section>
+        
+        <!--search-box------------------------------------------->
+        <div class="search-box">
+        <!--input--------->
+        <input type="text" placeholder=" Search Something Here">
+        <!--icon------>
+        <div class="s-icon"><i class="fas fa-search"></i></div>
+        </div>
+        
+        
+        <!--script------------------------->
+        <script type="text/javascript" src="js/Jquery.js"></script>
+        <script type="text/javascript">
+        
+            
+     $(document).ready(function(){
+        $('.search-icon').click(function(){
+        $('.search-icon').toggleClass('active')//search icon change onClick
+        $('.search-box').toggleClass('active')//box show when click on icon
+        $('header').toggleClass('active-search')//In mobile logo and bars                                             hide when search box show
+             
+         })
+     });
+            /*sub-menu visible on click  */
+            
+                $(document).ready(function(){
+         $('ul li').click(function(){
+                 $(this).siblings().removeClass('active')//remove active 									class when click again
+             
+             $(this).toggleClass('active')//Add Active class first click
+            
+            
+             
+         })
+     });
+            
+            
+            
+        
+            
+        $(document).ready(function(){
+         $('.toggle').click(function(){
+             $('.toggle').toggleClass('active')//change menu icon onClick
+             
+             $('header').toggleClass('active-menu')//hide logo and search 							icon when click on menu icon in mobile
+            
+             
+         })
+     });
+        
+        
+    
+    </script>
+    <div class="heroimg">
+        <div class="herotxt">
+            <h1><a>Our Services</a></h1>
+            <p style="color: white;margin-top:5px;">Find design from our gallery or contact us and<br> decorate your home like heaven</p>
+        </div>
+    </div>    
+    <h2 style="text-align: center;color:black;">Good design is better when you collaborate one <br>on one with a trusted partner—we’ve got you covered every step of the way</h2>
+    <hr style="margin-left: 30%; margin-right: 30%; margin-top: 5%;">
+    <div class="info">
+        <p>
+            <div class="onimages">
+                <img src="img/i1.jpg" alt="bedroom Interiors"/>
+            </div>
+            <div class="paras">
+                Interiors provides interior design services to create beautiful, inspiring, and 
+                inviting personal and communal spaces that bring people home to themselves.<br>
+                Our services include:<br>
+                <ul type='none'>
+                  <li>Full-scale interior design services</li>
+                  <li> Custom furniture design </li>
+                  <li> Sourcing high-quality specialty furnishings, antique and modern</li>
+                  <li> Use of green/ecologically-friendly and locally-sourced materials whenever possible</li>
+                  <li> Commercial design including restaurants and office spaces</li>
+                  <li> High-end builder, artisan, and dealer/vendor relationships</li>
+                  <li> Oversight and coordination of vendors and service people scheduling and timelines</li> 
+                  <li> Comprehensive oversight of cohesive design vision including colors, paints, textures, and finishes</li>
+                  <li> Art and curios consultation, acquisition, and placement</li>
+                </ul>
+            </div>
+        </p>
+    </div>
+    <hr>
+    <br>
+    <div class="flex">
+        <div class="item">
+        <img src="img/15.png" class="img01">
+        <h2 style="margin-left: 10%; margin-top: 5%; font-weight: 200;text-align: center;"class="para1">Kick it off</h2>
+        <p style="text-align: center;margin-top: 5%;color:black;"class="para1">Get matched with<br> the perfect <br>designer for your style & needs.</p>
+        </div>
+        <div class="item">
+            <img src="img/16.png" class="img02">
+        <h2 style="margin-left: 10%; margin-top: 5%;font-weight: 200;text-align: center;"class="para1">Collaborate online</h2>
+        <p style="text-align: center;margin-top: 3%;color:black;"class="para1">Review designs and chat<br> online with your designer<br> at your convenience—anytime, anywhere.</p>
+        </div>
+        <div class="item">
+            <img src="img/17.png" class="img03">
+        <h2 style="margin-left: 10%; margin-top: 5%;font-weight: 200;text-align: center;"class="para1">Get A Design Just For You</h2>
+        <p style="text-align: center;margin-top: 3%;color:black;"class="para1">Receive two initial design<br> concepts, a final design, a floor<br> plan and a personalized shopping list.</p>
+        </div>
+        <div class="item">
+        <img src="img/18.png"class="img04">
+        <h2 style="margin-left: 10%; margin-top: 5%;font-weight: 200;text-align: center;"class="para1">Shop Your New Room</h2>
+        <p style="text-align: center;margin-top: 3%;color:black;"class="para1">With one easy checkout, we’ll <br>take care of the ordering and shipping,<br> and always get you the best price.</p>
+        </div>
+    </div>
+    <br>
+    <h3 style="color:black;text-align:center;">View Our Works</h3>
+    <br>
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 5</div>
+            <img src="img/19.jpg">
+            <div class="text">Living Room</div>
+        </div>
+    
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 5</div>
+            <img src="img/20.jpg">
+            <div class="text">Bedrooms</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 5</div>
+            <img src="img/21.jpg">
+            <div class="text">Kids</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 5</div>
+            <img src="img/22.jpg">
+            <div class="text">Kitchen</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">5 / 5</div>
+            <img src="img/23.jpg">
+            <div class="text">Outdoor</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">6 / 7</div>
+            <img src="img/24.jpg">
+            <div class="text">Bathrooms</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">7 / 7</div>
+            <img src="img/25.jpeg">
+            <div class="text">Dining</div>
+        </div>
+    </div>
+    <br>
+    <div style="text-align:center">
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span>
+        <span class="dot"></span> 
+        <span class="dot"></span>  
+    </div>
+    <br>
+    <div id="links">
+    <div class="navtab">
+        <h2 id="outdoor">Outdoor</h2>
+        <h2 id="bedroom">Bedroom</h2>
+        <h2 id="bathroom">Bathroom</h2>
+        <h2 id="dining">Dining</h2>
+        <h2 id="office">Office</h2>
+        <h2 id="kids">Kids</h2>
+        <h2 id="living">Living</h2>
+        <h2 id="decor">Decorations</h2>
+        <h2 id="lighting">Lighting</h2>
+        <h2 id="kitchen">Kitchen</h2>
+        <h2 id="close">Close All</h2>
+    </div>
+    <br>
+    <div id="navtab">
+        <div class="div1" id="div1" style="display:none;">
+            <div>
+                <p>
+                    <img src="img/26.jpg" alt="outdoor" class="immg">
+                    In Summer, when it’s bright sunny, the outdoor becomes more like a living room. Yeah, why have your lunch inside when you can enjoy it under the sun with the pleasant smell of freshly cut grass with the warming breeze of summer?
+                    Warm temperature, bright sky and a sunny day are more than enough to drag you outside. 
+                    What if you are planning something fun to do such as lounging or eating? Well if you were, 
+                    then it’s high time you reconsider it.  Don’t worry if you are short on
+                    space, sometimes just a few inches are enough for the long way.
+                    The same applies if you are a bit tight on budget.
+                    </p>
+            </div>
+            <div>
+                <p>
+                    <img src="img/27.jpg"alt="outdoor" class="iggm">
+                    Just work with what you already have. Don’t worry if you don’t have any garden or even some greenery,
+                    it’s not something to fuss about. From yards to porches, we are going to help you for making the most out
+                    of your outdoor space. Yes, work with what you already have because you might have no idea what joy it can bring.
+                    So, there is no WiFi, but the connection here is a lot better.
+                </p>
+            </div>
+        </div>
+        <div class="div1" id="div2" style="display:none;">
+        <div>
+            <p>
+                <img src="img/28.jpg" alt="bedroom" class="immg"/>
+                Modern bedrooms are characterised by neutral tones of grey, white and black, all serving as simple, 
+                base colours. Walls act as a backdrop to abstract patterns and geometric prints. Lines on furniture are clean, 
+                incorporating steel bed frames and side tables. Feature walls are covered in straight striped wallpaper designs,
+                 while little splashes of vibrant colours here and there inject visual interest. Accessories are minimal when it 
+                 comes to modern designs. Storage is important,
+                 and should merge in well with the design of the room, while maintaining adequate functionality.
+            </p>
+        </div>
+        <div>
+            <p>
+                <img src="img/29.jpg" alt="bedroom" class="iggm"/>
+                Colours enhance your mood, so choosing the right colour for your bedroom can 
+                actually improve your sleep pattern. Green and blue are excellent bedroom colours. 
+                Lilac has a stress reducing effect, as does white. If you do decide to go for complete white
+                walls, incorporating different textures and patterns can add depth and warmth to your bedroom. 
+                White bedrooms exemplify style and evoke a peaceful ambience. Incorporating natural textures
+                and wood to white bedrooms will prevent your room from looking clinical and cold. 
+                Monochrome accents work well with white bedrooms too.
+            </p>
+        </div>
+    </div>
+        <div class="div1" id="div3" style="display:none;">
+            <div>
+                <p>
+                    <img src="img/30.jpg" alt="bathroom" class="immg"/>
+                    While designing your bathroom, it’s a good idea to think about certain key aspects like size, the colours to be used,
+                     location of features like sink, shower or bath and the use of natural (or artificial) light. If you children use the
+                      bathroom you need to be careful about the use of cleaning agents and other chemicals.
+                     Also it is a good idea to add decorative wallpaper or accessories to keep costs low and maintain the aesthetics.
+                     Designing a smaller bathroom is always harder than larger spaces, but this should not prevent homeowners from 
+                     experimenting with high quality bathroom design. Small bathroom ideas include the 
+                     clever use of lighting and colour that will make smaller spaces as welcoming and give the impression of space.
+                </p>
+            </div>
+            <div>
+                <p>
+                   <img src="img/31.jpg" alt="bathroom" class="iggm"/>
+                   Arranging bathroom items smartly can also make smaller bathrooms easy to use. For example, the bath and shower can be
+                    combined, while a corner sink can be installed. Using the right bathroom tile ideas can also be a great way to make 
+                    the most of a small space, as reflective ceramic tiles can make the room seem much brighter.
+                    It needs imagination and hard work but designing a small bathroom is not a Herculean task.Colour is vital when 
+                    styling the perfect bathroom. Using the right colour scheme, you can make your bathroom a pleasant place.
+                     Dark colour tones such as red and blue can add a luxurious feel and 
+                    are advised to use in bigger bathrooms, whereas lighter tones are better for smaller bathrooms. 
+                </p>
+            </div>
+        </div>
+        <div class="div1" id="div4" style="display:none;">
+            <div>
+                <p>
+                    <img src="img/32.jpeg"alt="dining" class="immg"/>
+                    For many people, the dining room is their centrepiece—the place that they entertain guests and share
+                     family meals. Because of its importance to the home, it’s important to get the design of any dining room
+                      exactly right. All well designed dining rooms pay close attention to the space available. When you are 
+                      trying to place tables and chairs, lighting, and storage cabinets, space is a major consideration. Good 
+                      designs also show impeccable harmony. Everything works together, from the ceiling lighting to the flooring,
+                       to the walls and the table. However, it’s important to note that everyone’s tastes will differ. There is no one
+                        perfect dining room,just an endless variety of interior designs that fit the passions of the people they serve.
+                </p>
+            </div>
+            <div>
+                <p>
+                   <img src="img/33.jpg"alt="dining" class="iggm"/>
+                   One thing to watch out for when designing any dining room is lighting.
+                    The table needs to be lit properly to show off food and dinner placings in their best light, but it might not be so 
+                    important to illuminate sideboards or walls, so consider using specially placed lamps that focus on the table.
+                     Materials are also important. Dining furniture needs to look good, but it should also be long lasting. Children 
+                     can easily damage your beautiful upholstery, and red wine can stain fabrics irretrievably. So consider using
+                      materials like wood or composites to ensure durability. Little touches can also make the difference between a
+                       bland space and a spectacular design. So think about curtains, flowers and ornaments, but don’t go over the top. 
+                       Restraint is important in choosing dining room décor as well.
+                </p>
+            </div>
+        </div>
+        <div class="div1" id="div5" style="display:none;">
+            <div>
+                <p>
+                    <img src="img/34.jpg" alt="office" class="immg"/>
+                    Just about everyone has to bring work home with them at some time, whether that be a stack of paperwork or saved on 
+                    a laptop. If you’re not an office worker then perhaps you need a dedicated spot to sort the household bills and 
+                    correspondence. Even the kids need a area to sit and concentrate on homework or do computer research. Whatever your
+                     needs, the chances are that you need a home office
+                     - whether that looks like a complete room, a nook or a pull-out shelf, that’s up to you.
+                </p>
+            </div>
+            <div>
+                <p>
+                   <img src="img/35.jpg" alt="office" class="iggm" />
+                   A small home office may benefit from having fitted furniture, with a made-to-measure desk and units. 
+                   This fitted desk sweeps over the top of a unique trash can , which is available here, to join with a 
+                   matching cupboard and bookshelves. A few stylish monochrome prints decorate
+                    the free wall space around the window, and a designer table lamp adorns the worktop.
+                   A desk can be situated just about anywhere. Behind a sofa is an ideal spot since the length of a sofa 
+                   matches the span of a desk.
+                    Decorative shelving installed behind the sofa can also work double time as office storage.
+                </p>
+            </div>
+        </div>
+        <div class="div1" id="div6" style="display:none;">
+            <div>
+                <p>
+                    <img src="img/36.png" alt="kids" class="immg"/>
+                    Brighter colours are making way for neutral tones such as beige, sand and nutty hues. It is increasingly common to 
+                    find kids’ rooms entirely created with an earthy, neutral colour scheme in mind, with small strokes of cooler natural
+                     greens, greys, and warmer pinks and whites. Increasingly parents opt for such palette for their kids’ rooms.
+                      There is little doubt such spaces positively impact their little dwellers by creating a calm and cosy backdrop for play, studies and sleep.
+                </p>
+            </div>
+            <div>
+                <p>
+                   <img src="img/37.jpg"alt="kids" class="iggm"/>
+                   Floral patterns in textiles and wallpaper have made a comeback in children’s interior decoration. 
+                   Using floral textiles will add character to the room no matter if you aim for sweet romantic look or a more dramatic vintage vibe. For a balanced 
+                   and coordinated look layer floral patterns with solid colours and patterns within similar colour palette.
+                   Good design is always about both form and function. Many designers are now hard at work creating amazing multi purpose
+                   products and furniture. And they are more practical than ever before! Now getting a piece of furniture that grows with your child is easy peasy.
+                </p>
+            </div>
+        </div>
+        <div class="div1" id="div7" style="display:none;">
+            <div>
+                <p>
+                    <img src="img/38.jpg"alt="living" class="immg"/>
+                    Every room should look well put together with the ideal mix of elements. Additionally, the room should 
+                    be synergistic with the overall design style of the house. Rather than placing all of one’s favourite furniture and
+                     accessories in the room, it’s essential to plan the layout of the space so that each object in the room serves the
+                      purpose or beauty or functionality. 
+                    The purpose of the room will also determine the design.
+                </p>
+            </div>
+            <div>
+                <p>
+                   <img src="img/39.jpg"alt="living" class="iggm"/>
+                   There is nothing like crafting a luxury living room that is suitable for enjoying family time and entertaining
+                    loved ones. This primary spot sets the tone for the rest of your home’s decor. It’s also one of the best places to
+                     showcase your design aesthetic by experimenting with color palettes, layers of texture and patterns, and a variety
+                      of furniture layouts. It’s meant to be comfortable, inviting, and full of style. Plus, if you’re a design
+                       enthusiast, it’s an ideal space in which to put your favorite trends to the test,
+                    whether it’s opting for maximalist art or going bold with metallic wall paint.
+                </p>
+            </div>
+        </div>
+        <div class="div1" id="div8" style="display:none;">
+            <div>
+                <p>
+                    <img src="img/40.jpg"alt="decorations" class="immg"/>
+                    A suzani hangs high above an Indonesian rattan sofa bed in this Cartagena home. 
+                    The gorgeous textile adds interest to the white walls and mixes well with other prints.
+                    Graphic prints can have major impact in a small space such as a powder room.
+                    Layering patterns in a range of styles and scales is an easy way to add visual interest to a room. 
+                    If your color choices are usually more reserved, step outside of your comfort zone by choosing a bold hue like purple for a hallway. 
+                    Every room can benefit from accessories with a history. Rather than showcasing your collectibles on a shelf, 
+                    set them out on a table
+                </p>
+            </div>
+            <div>
+                <p>
+                   <img src="img/41.jpg" alt="decorations" class="iggm"/>
+                   Floor-to-ceiling shelving never fails to add character to a room.Looking at your home from a holistic perspective—seeing how each room works in balance against the others—can help craft a welcome variety in your spaces,
+                    like emerald-and-charcoal dining room that adds a touch of formality .Rather than art, a high-impact wallpaper can give a subdued room some wow factor.
+                    Looking beyond the traditional with wallcoverings can create a truly standout design presence.The best way to balance out sleek lines and contemporary furniture is
+                     by adding a few unique natural elements, from driftwood to greenery. It’s easy to gravitate toward the usual suspects like wood and leather when trying to craft a textured living space, but branch outside of your comfort zone.
+                </p>
+            </div>
+        </div>
+        <div class="div1" id="div9" style="display:none;">
+            <div>
+                <p>
+                    <img src="img/42.jpg" alt="lighting" class="immg"/>
+                    Lighting design plays a key role in creating the right mood and adjusting
+                     the ambiance of interior spaces.  Interior designers have different lighting resources that help
+                      create functional spaces that can adjust to those specific needs of our clients.
+                    Residential interior designers utilize several types of lighting to create the correct 
+                    amount of lighting in a room. It is important to understand the use of each type of lighting source available 
+                    and which particular need it will satisfy in a successful home lighting plan.
+                </p>
+            </div>
+            <div>
+                <p>
+                   <img src="img/43.jpg" alt="lighting" class="iggm" />
+                    General lighting is one of the first layers of lighting used in modern 
+                    interior design and refers to the light used for the overall illumination
+                    of the space. These types of lighting sources provide basic lighting requirements 
+                    to create an accessible space where users can move around easily in a safe way.  
+                    Recessed ceiling lights, or overhead ceiling fixtures can meet general lighting needs.
+                    General lighting can sometimes be the existing lighting or part of the new lighting design plan.
+                </p>
+            </div>
+        </div>
+        <div class="div1" id="div10" style="display:none;">
+            <div>
+                <p>
+                   <img src="img/44.jpg" alt="kitchen" class="immg"/>
+                   As we move towards less cluttered lives, kitchenettes are playing an 
+                   increasingly important role in today’s homes. With a little effort you can have a functional
+                   and beautiful kitchenette. In many homes, kitchenettes are used as secondary kitchens in 
+                   finished basements, guest spaces or in-law suites. The newest styles are design forward and 
+                   super efficient.There are a lot of factors that you need to consider when you plan to design
+                   a new kitchen or remodel it. A kitchen is often the hub of the home, so it is very important
+                   to get it right, otherwise, it is heartbreaking.
+                   Kitchen remodelling needs more thought than picking a few colours and materials.
+                </p>
+            </div>
+            <div>
+                <p>
+                   <img src="img/45.png" alt="kitchen" class="iggm"/>
+                    When it's time to choose the colours for your kitchen, make sure you first take a 
+                    moment to think about the mission of the kitchen - if you are really looking for
+                    excitement or it is the room more for helping you find a sense of peace? If it is a 
+                    modern kitchen, do you want it to be your space to invent and conduct experiments -
+                    or are you and your family looking for a room that appears to be a great spot for
+                    entertaining? The heart of the home, the kitchen, must appeal the tastes of many.
+                    When it comes to learning how to paint your home's heart, choosing the right 
+                    kitchen colours is everything. Use some spicy, warm kitchen colours, such as red,
+                    orange and yellow, that relate to food and offer appetising surroundings. 
+                    Use cooler, serene kitchen paint colours like green, blue and violet to create a
+                    calm and fresh atmosphere. A simple colour change can definitely 
+                    update your kitchen in major ways.
+                </p>
+                <hr>
+            </div>
+        </div>
+        <div class="div1" id="div11" style="display:none;height:2px;">
+        </div>
+    </div>
+    <div class="info">
+        <p>
+            <div class="imgess" style="display:inline;">
+                <img src="img/46.jpg" alt="Living rooms " />
+            </div>
+            <div class="paragraph">
+                If you don't like a specific musical style, the theater bores you,
+                or you're not attracted to works of art, you can almost always avoid them.
+                Architecture, however, is different. A poorly thought-out project will 
+                affect the lives of many people consistently and for a long time.
+                With interiors, this effect is even more amplified. Humanity is spending
+                more and more time indoors, 
+                which directly impacts our well-being and health. <br>
+                Picking the right interior colour combinations requires an understanding of the colour wheel. 
+                This helps acquaint you with colour families, colour contrasts, and complements.
+            </div>
+        </p>
+    </div>
+    <br>
+    <hr>
+    <h2 style="text-align: center;color:#0d6b68; " id="faq">FAQ's</h2>
+        <div id="faqs">
+        <hr color="grey" style="margin-left: 20%; margin-right: 20%; margin-top: 5%;">
+        <h3 style="text-align: center;">Who are our interior designers?</h3>
+        <p style="text-align: center;">Our interior designers are hand selected across three experience levels ranging from talented newcomers to industry celebrities. Many of our designers are ASID and LEED certified and use CAD. They have excellent communication skills and are experts at understanding your vision and needs so that they can design the room you’ve been dreaming of.</p>
+        
+        <hr color="grey" style="margin-left: 20%; margin-right: 20%; margin-top: 5%;">
+        <h3 style="text-align: center;">What is online interior design?</h3>
+        <p style="text-align: center;">Online interior design, also known as e-design or virtual design is
+             the easy, affordable way of working with an interior designer. You’ll share details about your
+              space, style, budget and ideas and inspiration through our virtual platform. We’ll match you 
+              with the perfect designer for your needs. You will chat with your designer and swap ideas. Then 
+              you will receive 2 mood boards, a final design, floor plan and a shopping list that includes all
+               the furniture and decor you’ll need to complete your room. A purchasing concierge is ready to 
+               help you with all of your ordering, shipping, delivery needs.</p>
+
+        <hr color="grey" style="margin-left: 20%; margin-right: 20%; margin-top: 5%;">
+        <h3 style="text-align: center;">What vendors do you work with?</h3>
+        <p style="text-align: center;">We work with hundreds of trusted brands you already know and love, like One Kings Lane, Cost Plus World Market, buybuy BABY, Bed Bath & Beyond, CB2, West Elm, Anthropologie to name a few.</p>
+    
+        <hr color="grey" style="margin-left: 20%; margin-right: 20%; margin-top: 5%;">
+        <h3 style="text-align: center;">How will I collaborate with my interior designer?</h3>
+        <p style="text-align: center;">You will complete an online questionnaire, include photos of your space, and any inspirational images from sources like Pinterest or Instagram. Your designer will reach out to you on our platform, where you will exchange ideas and review concepts before moving onto your final design.</p>
+        <hr style="margin-left: 40%; margin-right: 40%;">
+        </div>
+        <div id="closeit" style="text-align:center;color:black;">close</div>
+        <hr>
+        <h2 style="text-align: center; margin-top: 5%;color:#366b69;">Vendors we work with..</h2>
+        <div class="vendors">
+        <img src="img/47.png"class="img1">
+        <img src="img/48.png" class="img2">
+        <img src="img/49.png" class="img3">
+        <img src="img/50.png"class="img4">
+        </div>
+        <br>
+        <hr style="margin-top:20px;">
+    <footer>
+            <nav style="width:50%;display:flex;justify-content: space-evenly;flex-direction:row;align-items: center;margin:auto;margin-top:20px;">
+              <a href="index.html">Home</a>
+              <a href="profile">About</a>
+              <a href="services.html">Services</a>
+              <a href="gallery.html">Gallery</a>
+              <a href="contact.html">Contact</a>
+            </nav>
+        <!-- <h4 style="text-align: center;color:#0d6b68;">All Copyrights reserved</h4> -->
+    </footer>
+</body>
+<script>
+    var slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 3000);
+    }
+</script>
+<script>
+$('document').ready(function (){
+    $('#outdoor').click(function(){
+          $('#div1').show(1000)
+    });
+    $('#outdoor').click(function(){
+        $('#div2,#div3,#div4,#div5,#div6,#div7,#div8,#div9,#div10').hide(1000)
+    });
+ });
+ $('document').ready(function (){
+     $('#bedroom').click(function(){
+         $('#div2').show(1000)
+     });
+    $('#bedroom').click(function(){
+        $('#div1,#div3,#div4,#div5,#div6,#div7,#div8,#div9,#div10').hide(1000)
+    });
+ });
+ $('document').ready(function (){
+     $('#bathroom').click(function(){
+         $('#div3').show(1000)
+     });
+    $('#bathroom').click(function(){
+        $('#div1,#div2,#div4,#div5,#div6,#div7,#div8,#div9,#div10').hide(1000)
+    });
+ });
+ $('document').ready(function (){
+     $('#dining').click(function(){
+         $('#div4').show(1000)
+     });
+    $('#dining').click(function(){
+        $('#div1,#div2,#div3,#div5,#div6,#div7,#div8,#div9,#div10').hide(1000)
+    });
+ });
+ $('document').ready(function (){
+     $('#office').click(function(){
+         $('#div5').show(1000)
+     });
+    $('#office').click(function(){
+        $('#div1,#div2,#div3,#div4,#div6,#div7,#div8,#div9,#div10').hide(1000)
+    });
+ });
+ $('document').ready(function (){
+     $('#kids').click(function(){
+         $('#div6').show(1000)
+     });
+    $('#kids').click(function(){
+        $('#div1,#div2,#div3,#div4,#div5,#div7,#div8,#div9,#div10').hide(1000)
+    });
+ });
+ $('document').ready(function (){
+     $('#living').click(function(){
+         $('#div7').show(1000)
+     });
+    $('#living').click(function(){
+        $('#div1,#div2,#div3,#div4,#div5,#div6,#div8,#div9,#div10').hide(1000)
+    });
+ });
+ $('document').ready(function(){
+     $('#decor').click(function(){
+         $('#div8').show(1000)
+     });
+    $('#decor').click(function(){
+        $('#div1,#div2,#div3,#div4,#div5,#div6,#div7,#div9,#div10').hide(1000)
+    });
+ });
+ $('document').ready(function(){
+     $('#lighting').click(function(){
+         $('#div9').show(1000)
+     });
+    $('#lighting').click(function(){
+        $('#div1,#div2,#div3,#div4,#div5,#div6,#div7,#div8,#div10').hide(1000)
+    });
+ });
+ $('document').ready(function(){
+    $('#kitchen').click(function(){
+         $('#div10').show(1000)
+     });
+    $('#kitchen').click(function(){
+        $('#div1,#div2,#div3,#div4,#div5,#div6,#div7,#div8,div9').hide(1000)
+    });
+ });
+ $('document').ready(function(){
+     $('#close').click(function(){
+         $('#div11').show(1000)
+     });
+    $('#close').click(function(){
+        $('#div1,#div2,#div3,#div4,#div5,#div6,#div7,#div8,#div9,#div10').hide(1000)
+    });
+ });
+ $('document').ready(function(){
+    $('#faqs').hide(10)
+ });
+ $('document').ready(function(){
+     $('#faq').click(function(){
+         $('#faqs').show(1000)
+     });
+    $('#closeit').click(function(){
+        $('#faqs').hide(1000)
+    });
+ });
+   
+ 
+</script>
+<div class="top_page">
+    <a href="#top"> Go to Top</a>
+</div>
+<footer class="footer">
+<a href="#">Copyright&copy;2020</a>
+|
+<a href="#">(Verzio)Major_Project(Ravi Kant)</a>
+|
+<a href="">Internship_program</a>
+|
+<a href="">(WD-Minor-AUG)</a>
+|
+<a href=""></a>
+</footer>
+
+</html>

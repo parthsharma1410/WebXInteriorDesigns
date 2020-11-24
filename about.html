@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="css/profile_style_sheet.css">
+    <link rel="stylesheet" href="css/style_COnta.css">
+    	<!--using FontAwesome---------------->
+	<script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<section class="navigation">
+	<header>
+	<!--bars-icon-->
+	<div class="toggle"></div>
+	<!--menu-->
+	<nav class="menu">
+	<!--logo------------------->
+	
+	<div class="logo">WebX Interior Designs</div>
+		<ul >
+			<li><a href="index.html">Home</a></li>	
+			<li class="sub-menu"><a href="#">Designs</a>
+			<!--sub-menu-->
+				<ul >
+					<li><a href="residential.html">Residential</a></li>
+					<li><a href="commercial.html">Commercial</a></li>
+					<li><a href="business.html">Business</a></li>
+				</ul>
+				
+				
+			</li>	
+			<li><a href="ourproducts.html">Designers</a></li>	
+			<li class="sub-menu"><a href="services.html">Services</a>
+				<!--sub-menu-->
+				<!-- <ul >
+					<li><a href="#">Furniture</a></li>
+					<li><a href="#">Chandeliers</a></li>
+					<li><a href="#">Home Decors</a></li>
+				</ul>	 -->
+				
+			</li>		
+			<li><a href="about.html">About</a></li>	
+			<li><a href="contact.html">Contact</a>	</li>	
+		</ul>
+	</div>
+	</nav>
+	<!--search-icon---------------------->
+	<div class="search-icon"></div>
+	</header>
+	
+	
+
+	</section>
+	
+	<!--search-box------------------------------------------->
+	<div class="search-box">
+	<!--input--------->
+	<input type="text" placeholder=" Search Something Here">
+	<!--icon------>
+	<div class="s-icon"><i class="fas fa-search"></i></div>
+	</div>
+	
+	
+	<!--script------------------------->
+	<script type="text/javascript" src="js/Jquery.js"></script>
+	<script type="text/javascript">
+	
+		
+ $(document).ready(function(){
+	$('.search-icon').click(function(){
+	$('.search-icon').toggleClass('active')//search icon change onClick
+	$('.search-box').toggleClass('active')//box show when click on icon
+	$('header').toggleClass('active-search')//In mobile logo and bars                                             hide when search box show
+		 
+	 })
+ });
+		/*sub-menu visible on click  */
+		
+			$(document).ready(function(){
+	 $('ul li').click(function(){
+		 	$(this).siblings().removeClass('active')//remove active 									class when click again
+		 
+		 $(this).toggleClass('active')//Add Active class first click
+		
+		
+		 
+	 })
+ });
+		
+		
+		
+	
+		
+	$(document).ready(function(){
+	 $('.toggle').click(function(){
+		 $('.toggle').toggleClass('active')//change menu icon onClick
+		 
+		 $('header').toggleClass('active-menu')//hide logo and search 							icon when click on menu icon in mobile
+		
+		 
+	 })
+ });
+	
+	
+
+</script>
+<div class="overhide">
+<div class="about-the-company content-background">
+    <div>
+    <h1 class="content-title">About Our Team</h1>
+    <div class="content-matter">
+        <sup>W</sup>ith our carefully considered showcase of over 400.000 premium design products and materials, Architonic is the number-one online community for architects, designers, home-owners and design enthusiasts. 16 million visitors a year choose Architonic as their guide to the very best of current design.
+        <br>
+        <br>
+        <br>
+        <sup>W</sup>ith our head office in Zurich, Architonic AG is an internationally based team of architects, designers, IT experts and marketing professionals. Our key aim is to generate up-to-the-minute and relevant expert information and knowledge, and to distribute this across the Architonic community of architects, designers, researchers, manufacturers and retailers.
+
+
+    </div>
+</div>
+<div>
+    <div class="teammembers-image">
+        <!-- <img src="Imgs/2.jpg" alt="teamimage" class="team-image"> -->
+    </div>
+    <div class="content-bottom-matter content-matter"><sup>A</sup> design product isn’t something that exists in isolation. At Architonic, we believe that the relation between product and the architectural space to which it’s applied is fundamental to a successful project. That’s why we’ve pioneered the linking of architectural projects with the furnishings, materials and fittings that have been used in their execution, resulting in a completely new information resource for architects and planners, as well as for designers and manufacturers.
+    </div>
+</div>
+</div>
+
+<!-- profiles of team members will start from this line -->
+<div class="team-names">
+    <div class="team-heading">Our Personnel</div>
+   <div class="team-members">
+        <div class="card">
+            SriRanga Rajan<br>
+            Creative Director<br>
+            16 years experience,30 projects
+            <br>
+            <th><a href="#"><img src="img/media_icons/facebook.png"width="30px" height="30px"></a></th>
+            <th><a href="#"><img src="img/media_icons/gmail.png" width="30px" height="30px"></a></th>
+            <th><a href="#"><img src="img/media_icons/linkedin.png" width="30px" height="30px"></a></th>
+            <th><a href="#"><img src="img/media_icons/twitter.png" width="30px" height="30px"></a></th>
+        </div>
+        <img src="img/06.jpg" alt="member1" class="team-member-images">
+    </div>
+    <div class="team-members revert-profiles">
+        <div class="card">
+            Chidambaram Iyer<br>
+            Interior Designer<br>
+            11 years experience,23 projects <br>
+            <th><a href="#"><img src="img/media_icons/facebook.png"width="30px" height="30px"></a></th>
+            <th><a href="#"><img src="img/media_icons/gmail.png" width="30px" height="30px"></a></th>
+            <th><a href="#"><img src="img/media_icons/linkedin.png" width="30px" height="30px"></a></th>
+            <th><a href="#"><img src="img/media_icons/twitter.png" width="30px" height="30px"></a></th>
+        </div>
+        <img src="img/10.jpg" alt="member1" class="team-member-images">
+    </div>
+    <div class="team-members">
+    <div class="card">
+        Thayar Devi<br>
+        Project Designer<br>
+        8 years experience ,14 projects<br>
+        <th><a href="#"><img src="img/media_icons/facebook.png"width="30px" height="30px"></a></th>
+        <th><a href="#"><img src="img/media_icons/gmail.png" width="30px" height="30px"></a></th>
+        <th><a href="#"><img src="img/media_icons/linkedin.png" width="30px" height="30px"></a></th>
+        <th><a href="#"><img src="img/media_icons/twitter.png" width="30px" height="30px"></a></th>    
+    </div>
+    <img src="img/01.jpg" alt="member1" class="team-member-images">
+    </div>
+    <div class="team-members revert-profiles">
+        <div class="card">
+            Sita Mitily<br>
+            Studio Manager<br>
+            13 years experience ,3D Renderings & Graphic presentations<br>
+            <th><a href="#"><img src="img/media_icons/facebook.png"width="30px" height="30px"></a></th>
+            <th><a href="#"><img src="img/media_icons/gmail.png" width="30px" height="30px"></a></th>
+            <th><a href="#"><img src="img/media_icons/linkedin.png" width="30px" height="30px"></a></th>
+            <th><a href="#"><img src="img/media_icons/twitter.png" width="30px" height="30px"></a></th>
+        </div>
+        <img src="img/04.jpg" alt="member1" class="team-member-images">
+    </div>
+    <div class="team-members">
+        <div class="card">
+            Neela Ramchandra <br>
+            Interior Architect <br>
+            5 years experience , 17 projects<br>
+            <th><a href="#"><img src="img/media_icons/facebook.png"width="30px" height="30px"></a></th>
+            <th><a href="#"><img src="img/media_icons/gmail.png" width="30px" height="30px"></a></th>
+            <th><a href="#"><img src="img/media_icons/linkedin.png" width="30px" height="30px"></a></th>
+            <th><a href="#"><img src="img/media_icons/twitter.png" width="30px" height="30px"></a></th>
+        </div>
+        <img src="img/05.jpg" alt="member1" class="team-member-images">
+    </div>
+    <div class="team-members revert-profiles">
+        <div class="card">
+            Joseph Marry<br>
+            Interior Decorator <br>
+            7 years experience ,22 projects<br>
+            <th><a href="#"><img src="img/media_icons/facebook.png"width="30px" height="30px"></a></th>
+            <th><a href="#"><img src="img/media_icons/gmail.png" width="30px" height="30px"></a></th>
+            <th><a href="#"><img src="img/media_icons/linkedin.png" width="30px" height="30px"></a></th>
+            <th><a href="#"><img src="img/media_icons/twitter.png" width="30px" height="30px"></a></th>
+        </div>
+        <img src="img/02.jpg" alt="member1" class="team-member-images">
+    </div>
+    <div class="team-members">
+        <div class="card">
+            Iyisha Behgam<br>
+            Junior Designer <br>
+            proficeny in AUTO-CAD,Photoshop<br>
+            <th><a href="#"><img src="img/media_icons/facebook.png"width="30px" height="30px"></a></th>
+            <th><a href="#"><img src="img/media_icons/gmail.png" width="30px" height="30px"></a></th>
+            <th><a href="#"><img src="img/media_icons/linkedin.png" width="30px" height="30px"></a></th>
+            <th><a href="#"><img src="img/media_icons/twitter.png" width="30px" height="30px"></a></th>
+        </div>
+        <img src="img/03.jpg" alt="member1" class="team-member-images">
+    </div>
+    <div class="team-members revert-profiles">
+        <div class="card">
+            Garuda sharma<br>
+            Technical Designer <br>
+            8 years experience software  Development,18 projects<br>
+            <th><a href="#"><img src="img/media_icons/facebook.png"width="30px" height="30px"></a></th>
+            <th><a href="#"><img src="img/media_icons/gmail.png" width="30px" height="30px"></a></th>
+            <th><a href="#"><img src="img/media_icons/linkedin.png" width="30px" height="30px"></a></th>
+            <th><a href="#"><img src="img/media_icons/twitter.png" width="30px" height="30px"></a></th>
+        </div>
+        <img src="img/08.jpg" alt="member1" class="team-member-images">
+    </div>
+    <div class="team-members">
+        <div class="card">
+            Laxman Agarwal<br>
+            Project Manager <br>
+            13 years experience ,26 projects<br>
+            <th><a href="#"><img src="img/media_icons/facebook.png"width="30px" height="30px"></a></th>
+            <th><a href="#"><img src="img/media_icons/gmail.png" width="30px" height="30px"></a></th>
+            <th><a href="#"><img src="img/media_icons/linkedin.png" width="30px" height="30px"></a></th>
+            <th><a href="#"><img src="img/media_icons/twitter.png" width="30px" height="30px"></a></th>
+        </div>
+        <img src="img/09.jpg" alt="member1" class="team-member-images">
+    </div>
+    <div class="team-members revert-profiles">
+        <div class="card">
+            Meena Sundar<br>
+            Design Director <br>
+            10 years experience ,Budgeting and installation<br>
+            <th><a href="#"><img src="img/media_icons/facebook.png"width="30px" height="30px"></a></th>
+            <th><a href="#"><img src="img/media_icons/gmail.png" width="30px" height="30px"></a></th>
+            <th><a href="#"><img src="img/media_icons/linkedin.png" width="30px" height="30px"></a></th>
+            <th><a href="#"><img src="img/media_icons/twitter.png" width="30px" height="30px"></a></th>
+        </div>
+        <img src="img/02.jpg" alt="member1" class="team-member-images">
+    </div>
+    <div class="team-members">
+        <div class="card">
+            keshva Yadav<br>
+            Managing Director <br>
+            14 years experience,Maintaining client relationships<br>
+            <th><a href="#"><img src="img/media_icons/facebook.png"width="30px" height="30px"></a></th>
+            <th><a href="#"><img src="img/media_icons/gmail.png" width="30px" height="30px"></a></th>
+            <th><a href="#"><img src="img/media_icons/linkedin.png" width="30px" height="30px"></a></th>
+            <th><a href="#"><img src="img/media_icons/twitter.png" width="30px" height="30px"></a></th>
+        </div>
+        <img src="img/11.jpg" alt="member1" class="team-member-images">
+    </div>
+    <div class="team-members revert-profiles">
+        <div class="card">
+            Acharya Kapoor<br>
+            Associate <br>
+            9 years experience ,18 projects<br>
+            <th><a href="#"><img src="img/media_icons/facebook.png"width="30px" height="30px"></a></th>
+            <th><a href="#"><img src="img/media_icons/gmail.png" width="30px" height="30px"></a></th>
+            <th><a href="#"><img src="img/media_icons/linkedin.png" width="30px" height="30px"></a></th>
+            <th><a href="#"><img src="img/media_icons/twitter.png" width="30px" height="30px"></a></th>
+        </div>
+        <img src="img/12.jpg" alt="member1" class="team-member-images">
+    </div>
+</div>
+<hr>
+<div class="fotter">
+    <div class="pa">
+        <div class="fotter-title">
+        </div>
+        <div class="fotter-horizon">
+            <ul class="info-fotter-content">
+                <li><div class="comment-title">Commnets</div>
+                <div class="info-fotter">
+                    <textarea name="comment-box" id="comment-box" cols="30" rows="3" class="comment-box"></textarea>
+                    <button type="submit" class="submit-button">Submit</button>
+                </div>
+                </li>
+                <!-- <li class="fotter-navigate-text-a">
+                    <div class="fotter-navigate-text">Navigate</div>
+                    <a href="#home">Home</a>
+                    <a href="services">Service</a>
+                    <a href="About">About</a>
+                    <a href="ContactUs">ContactUs</a>
+                </li> -->
+                <li class="achivements-li">
+                    <div class="achivements">Achivements</div>
+                    <div class="achivements-summery">Micro-architecture for interior-architectural spaces:recycled and recyclable materials The concrete slabs on the floor,colombo's architecture a wide terracotta-coloured band delineates the kitchen and a small adjacent office nook. razavi architecture's  is used to accentuate kitchen cabinets and integrated storage space, creating an uncluttered and clean interior. AZAB's playful exercise in colour blocking in the Mixtape Apartment was achieved on a tight budget and created minimal building waste.</div>
+                </li>
+            </ul>
+        </div>
+        <ul class="social">
+            <li><a href="#facebook"><img src="img/media_icons/facebook.png" alt="facebook_id" class="social-media-icons"></a></li>
+            <li><a href="#gmail"><img src="img/media_icons/gmail.png" alt="gmail_id" class="social-media-icons"></a></li>
+            <li><a href="#instagram"><img src="img/media_icons/instagram.png" alt="instagram_id" class="social-media-icons"></a></li>
+            <li><a href="#linkedin"><img src="img/media_icons/linkedin.png" alt="linkedin_id" class="social-media-icons"></a></li>
+            <li><a href="#twitter"><img src="img/media_icons/twitter.png" alt="twitter_id" class="social-media-icons"></a></li>
+            <li><a href="#youtube"><img src="img/media_icons/youtube.png" alt="youtube_id" class="social-media-icons"></a></li>
+            <li><a href="#whatsapp"><img src="img/media_icons/whatsapp.png" alt="whatsapp_id" class="social-media-icons"></a></li>
+        </ul>
+    </div>
+</div>
+<div class="top_page">
+    <a href="#top"> Go to Top</a>
+</div>
+<footer class="footer">
+<a href="#">Copyright&copy;2020</a>
+|
+<a href="#">(Verzio)Major_Project(Ravi Kant)</a>
+|
+<a href="">Internship_program</a>
+|
+<a href="">(WD-Minor-AUG)</a>
+|
+<a href=""></a>
+</footer>
+
+<!-- <div class="copyrigths">copyrigths &copy; 2017 COMPANY'S ALL RIGHTS ARE RESERVED</div> -->
+</body>
+</html>
